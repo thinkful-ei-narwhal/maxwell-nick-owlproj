@@ -1,5 +1,5 @@
 import React from 'react';
-import Participant from './participant';
+import Participant from './Participant';
 
 import './sidebar.css'
 
