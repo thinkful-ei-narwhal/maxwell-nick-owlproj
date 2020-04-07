@@ -5,7 +5,7 @@ export default function Sidebar(props) {
   //todo: participants that are here, should be shown first
 
   const participantComponents = props.participants.map(participant => {
-    return <Participant id={participant.id} name={participant.name} avatar={participant.avatar} inSession={participant.inSession} onStage={participant.onStage} />;
+    return <Participant key={participant.id} name={participant.name} avatar={participant.avatar} inSession={participant.inSession} onStage={participant.onStage} />;
   });
 
   // if (inSession) {
