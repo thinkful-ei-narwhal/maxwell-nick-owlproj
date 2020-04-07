@@ -1,13 +1,35 @@
 import React from 'react';
-import ParticipantList from "./participantList.js";
 
+export default function Participant(props) {
+  console.log(props)
 
-function Participant(props){
-    return (
-        <div className='participant'>Hi</div>
-    )
+  return (
+    <div className='participant' id={props.id}>
+      <header>
+        <h1>{props.name}</h1>
+      </header>
+      <img src={props.avatar} alt="testing" />
+      <ul >
+        <li className={inSession(props.inSession)}>{onStage(props.onStage)}</li>
+      </ul>
+    </div>
+  )
 }
 
-export default {
-    Participant
+function onStage(onStage) {
+  if (onStage) {
+    return <p>on stage</p>
+  }
+  else {
+    return <p>observer</p>
+  }
+}
+
+function inSession(inSession) {
+  if (inSession) {
+    return 'inSessionClass';
+  }
+  else {
+    return 'notInSessionClass'
+  }
 }

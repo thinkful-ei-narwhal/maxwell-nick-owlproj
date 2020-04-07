@@ -1,12 +1,12 @@
 import React from 'react';
-import Sidebar from './Sidebar.js';
-import ParticipantList from "./participantList.js";
+import store from './store';
+import Sidebar from './sidebar';
 
-function App(props) {
-  console.log(ParticipantList.participants[0])
+function App() {
+
   return (
     <main className='App'>
-      <Sidebar test={ParticipantList.participants[0]}/>
+      <Sidebar participants={store.participants} />
     </main>
   );
 }

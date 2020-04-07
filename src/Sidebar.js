@@ -1,16 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ParticipantList from "./participantList.js";
-import Participant from "./participant.js";
+import Participant from './participant';
 
-function Sidebar(props){
-    return (
-        <div className='sidebar'>
-        </div>
-    )
-}
+export default function Sidebar(props) {
+  //todo: participants that are here, should be shown first
 
-export default {
-    Sidebar
+  const participantComponents = props.participants.map(participant => {
+    return <Participant id={participant.id} name={participant.name} avatar={participant.avatar} inSession={participant.inSession} onStage={participant.onStage} />;
+  });
+
+  // if (inSession) {
+  //   Array.unshift()
+  // }
+  // else {
+  //   Array.push()
+  // }
+
+  return (
+    <div className='sidebar'>
+      {participantComponents}
+    </div>
+  )
 }
