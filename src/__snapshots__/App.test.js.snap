@@ -118,5 +118,35 @@ exports[`renders the UI as expected 1`] = `
       </ul>
     </div>
   </div>
+  <div
+    className="stage"
+  >
+    <div
+      className="onStage-participant"
+    >
+      <header>
+        <h1>
+          Koren Templeton
+        </h1>
+      </header>
+      <img
+        alt="testing"
+        src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+      />
+    </div>
+    <div
+      className="onStage-participant"
+    >
+      <header>
+        <h1>
+          Ashla Attwool
+        </h1>
+      </header>
+      <img
+        alt="testing"
+        src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+      />
+    </div>
+  </div>
 </main>
 `;

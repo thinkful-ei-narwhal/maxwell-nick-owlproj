@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="onStage-participant"
+>
+  <header>
+    <h1>
+      Koren Templeton
+    </h1>
+  </header>
+  <img
+    alt="testing"
+    src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+  />
+</div>
+`;
