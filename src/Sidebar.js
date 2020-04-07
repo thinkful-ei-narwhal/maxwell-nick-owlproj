@@ -3,21 +3,23 @@ import Participant from './participant';
 
 export default function Sidebar(props) {
   //todo: participants that are here, should be shown first
-
   const participantComponents = props.participants.map(participant => {
     return <Participant key={participant.id} name={participant.name} avatar={participant.avatar} inSession={participant.inSession} onStage={participant.onStage} />;
   });
 
-  // if (inSession) {
-  //   Array.unshift()
-  // }
-  // else {
-  //   Array.push()
-  // }
+let participantComponentsSorted = [];
+participantComponents.forEach(component => {
+    if (component.props.inSession === true) {
+    participantComponentsSorted.unshift(component);
+  }
+    else {
+     participantComponentsSorted.push(component);
+   }
+});
 
   return (
     <div className='sidebar'>
-      {participantComponents}
+      {participantComponentsSorted}
     </div>
   )
 }

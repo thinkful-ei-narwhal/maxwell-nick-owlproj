@@ -16,17 +16,15 @@ import Participant from './participant';
 
 /* SMOKE TEST *//* SMOKE TEST *//* SMOKE TEST *//* SMOKE TEST *//* SMOKE TEST *//* SMOKE TEST *//* SMOKE TEST */
 it('renders without crashing', () => {
-  // first create a DOM element to render the component into
-  const div = document.createElement('div');
-  // render the component, this is the actual test, if something is wrong it will fail here
-  ReactDOM.render(<App />, div);
-  // clean up code
-  ReactDOM.unmountComponentAtNode(div);
-});
+    // first create a DOM element to render the component into
+    const div = document.createElement('div');
+    // render the component, this is the actual test, if something is wrong it will fail here
+    ReactDOM.render(<Sidebar participants={store.participants} />, div);
+    // clean up code
+    ReactDOM.unmountComponentAtNode(div);
+  });
 /* SMOKE TEST *//* SMOKE TEST *//* SMOKE TEST *//* SMOKE TEST *//* SMOKE TEST *//* SMOKE TEST *//* SMOKE TEST */
-
-/* Snapshot TEST *//* Snapshot TEST *//* Snapshot TEST *//* Snapshot TEST *//* Snapshot TEST *//* Snapshot TEST */
 it('renders the UI as expected', () => {
-  expect(errorRenderer.create(<App />).toJSON()).toMatchSnapshot();
+    const newJsonString = errorRenderer.create(<Sidebar participants={store.participants}/>).toJSON();
+    expect(newJsonString).toMatchSnapshot();
 });
-/* Snapshot TEST *//* Snapshot TEST *//* Snapshot TEST *//* Snapshot TEST *//* Snapshot TEST *//* Snapshot TEST */

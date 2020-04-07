@@ -1,8 +1,6 @@
 import React from 'react';
 
 export default function Participant(props) {
-  console.log(props)
-
   return (
     <div className='participant' id={props.id}>
       <header>

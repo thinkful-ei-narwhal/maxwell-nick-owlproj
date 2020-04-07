@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<main
+  className="App"
+>
+  <div
+    className="sidebar"
+  >
+    <div
+      className="participant"
+    >
+      <header>
+        <h1>
+          Ashla Attwool
+        </h1>
+      </header>
+      <img
+        alt="testing"
+        src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+      />
+      <ul>
+        <li
+          className="inSessionClass"
+        >
+          <p>
+            on stage
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="participant"
+    >
+      <header>
+        <h1>
+          Frank Runciman
+        </h1>
+      </header>
+      <img
+        alt="testing"
+        src="https://robohash.org/etexercitationemassumenda.jpg?size=200x200&set=set1"
+      />
+      <ul>
+        <li
+          className="inSessionClass"
+        >
+          <p>
+            observer
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="participant"
+    >
+      <header>
+        <h1>
+          Caty Flucker
+        </h1>
+      </header>
+      <img
+        alt="testing"
+        src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+      />
+      <ul>
+        <li
+          className="inSessionClass"
+        >
+          <p>
+            observer
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="participant"
+    >
+      <header>
+        <h1>
+          Koren Templeton
+        </h1>
+      </header>
+      <img
+        alt="testing"
+        src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+      />
+      <ul>
+        <li
+          className="inSessionClass"
+        >
+          <p>
+            on stage
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="participant"
+    >
+      <header>
+        <h1>
+          Axe Kubicka
+        </h1>
+      </header>
+      <img
+        alt="testing"
+        src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+      />
+      <ul>
+        <li
+          className="notInSessionClass"
+        >
+          <p>
+            observer
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+`;
