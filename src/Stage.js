@@ -1,6 +1,8 @@
 import React from 'react';
 import OnStageParticipant from './OnStageParticipant';
 
+import './stage.css'
+
 export default function Stage(props) {
   const onStageParticipants = [];
   props.participants.forEach(participant => {

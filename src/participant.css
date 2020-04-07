@@ -1,0 +1,21 @@
+.participant{
+    
+}
+
+.inSessionClass{
+    list-style-type: '►';
+
+}
+
+.inSessionClass::marker{
+    color: blue;
+}
+
+.notInSessionClass{
+    list-style-type: '►';
+
+}
+
+.notInSessionClass::marker{
+    color: red;
+}

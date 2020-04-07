@@ -1,5 +1,7 @@
 import React from 'react';
-import Participant from './Participant';
+import Participant from './participant';
+
+import './sidebar.css'
 
 export default function Sidebar(props) {
   const participantComponents = props.participants.map(participant => {

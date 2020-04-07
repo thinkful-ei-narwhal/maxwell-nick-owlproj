@@ -1,4 +1,5 @@
 import React from 'react';
+import './onstageparticipant.css';
 
 export default function OnStageParticipant(props) {
 

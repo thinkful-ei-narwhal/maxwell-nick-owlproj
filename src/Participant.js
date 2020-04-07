@@ -1,4 +1,5 @@
 import React from 'react';
+import './participant.css';
 
 export default function Participant(props) {
   return (
@@ -28,6 +29,6 @@ function inSession(inSession) {
     return 'inSessionClass';
   }
   else {
-    return 'notInSessionClass'
+    return 'notInSessionClass';
   }
 }
